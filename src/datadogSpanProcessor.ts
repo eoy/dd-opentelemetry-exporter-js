@@ -95,7 +95,7 @@ export class DatadogSpanProcessor implements SpanProcessor {
   }
 
   // adds span to queue.
-  onStart(span: Span, parentContext: Context): void; {
+  onStart(span: Span, parentContext: Context): void {
     if (this._isShutdown) {
       return;
     }
